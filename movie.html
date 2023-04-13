@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Part Two - Movies App!</title>
+  <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+  <div>
+    <h1>Movie Rating App</h1>
+    <form id="new-movie">
+      <label for="title"> Title: </label>
+      <input type="text" id="title" minlength="2">
+
+      <label for="rating"> Rating: </label>
+      <input type="number" min="0" max="10" id="rating">
+
+      <button type="submit" class="submit">Add Movie!</button>
+    </form>
+
+    <button id="sort-title">Sort by Title</button>
+    <button id="sort-rating">Sort by Rating</button>
+
+    <ul id="movie-list" class="list">
+
+    </ul>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script src="movie.js"></script>
+</body>
+
+</html>
